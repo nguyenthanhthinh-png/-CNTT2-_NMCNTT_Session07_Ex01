@@ -1,0 +1,6 @@
+1. Tại sao máy tính bị “Not Responding” khi mở tệp bằng Notepad?
+Tệp server_log_800MB.log có dung lượng 800 MB, chứa lượng dữ liệu văn bản rất lớn. Khi mở tệp bằng Notepad, chương trình phải đọc và xử lý lượng dữ liệu này, tiêu tốn nhiều RAM và tài nguyên CPU. Điều đó có thể khiến máy tính bị chậm hoặc Notepad không phản hồi, đặc biệt khi máy có bộ nhớ hạn chế.
+2. Tại sao lệnh cat bị lỗi trong CMD?
+CMD (Command Prompt) là giao diện dòng lệnh truyền thống của Windows và không hỗ trợ lệnh cat theo mặc định. Vì vậy, khi nhập lệnh cat server_log_800MB.log, hệ thống báo lỗi không nhận diện được lệnh.
+3. Tại sao lệnh cat hoạt động trong PowerShell?
+Trong PowerShell, cat là một alias (bí danh) của lệnh Get-Content. Alias cho phép người dùng sử dụng tên lệnh ngắn gọn để đọc nội dung tệp. Tuy nhiên, đối với tệp lớn, nên giới hạn lượng dữ liệu hiển thị để tránh làm terminal chậm.

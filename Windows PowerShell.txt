@@ -1,0 +1,37 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\thanhthinh> 1..20 | ForEach-Object { "Dong $_ - ERROR mau" } | Set-Content .\server_log_800MB.log
+PS C:\Users\thanhthinh> Get-Content .\server_log_800MB.log
+Dong 1 - ERROR mau
+Dong 2 - ERROR mau
+Dong 3 - ERROR mau
+Dong 4 - ERROR mau
+Dong 5 - ERROR mau
+Dong 6 - ERROR mau
+Dong 7 - ERROR mau
+Dong 8 - ERROR mau
+Dong 9 - ERROR mau
+Dong 10 - ERROR mau
+Dong 11 - ERROR mau
+Dong 12 - ERROR mau
+Dong 13 - ERROR mau
+Dong 14 - ERROR mau
+Dong 15 - ERROR mau
+Dong 16 - ERROR mau
+Dong 17 - ERROR mau
+Dong 18 - ERROR mau
+Dong 19 - ERROR mau
+Dong 20 - ERROR mau
+PS C:\Users\thanhthinh> Get-Content .\server_log_800MB.log -Tail 10
+Dong 11 - ERROR mau
+Dong 12 - ERROR mau
+Dong 13 - ERROR mau
+Dong 14 - ERROR mau
+Dong 15 - ERROR mau
+Dong 16 - ERROR mau
+Dong 17 - ERROR mau
+Dong 18 - ERROR mau
+Dong 19 - ERROR mau
+Dong 20 - ERROR mau
+PS C:\Users\thanhthinh>
